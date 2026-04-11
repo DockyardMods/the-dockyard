@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "format": "bunx prettier --write . && bun run scripts/sort-registry.ts",
+    "format": "bun run scripts/sort-registry.ts && bunx prettier --write .",
     "validate:schema": "bun run scripts/validate-registry.ts",
     "validate": "bun validate:schema"
   },
