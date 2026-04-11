@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "format:registry": "bun run scripts/sort-registry.ts && bunx prettier --write registry.json",
-    "validate:schema": "bun run scripts/validate-registry.ts",
+    "validate:schema": "bun run scripts/validate-registry-schema.ts",
     "validate": "bun validate:schema"
   },
   "devDependencies": {
