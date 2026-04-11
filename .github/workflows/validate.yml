@@ -1,0 +1,33 @@
+name: Validate Registry
+
+on:
+  pull_request:
+    paths:
+      - registry.json
+      - scripts/**/*.ts
+  push:
+    paths:
+      - registry.json
+      - scripts/**/*.ts
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2.2.0
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --production
+
+      - name: Validate registry
+        run: bun validate
+
+      - name: Check formatting
+        run: bun format:registry
