@@ -1,0 +1,6 @@
+{
+  "$schema": "./schemas/registry.schema.json",
+  "version": 1,
+  "currentGameVersionId": "12116141",
+  "mods": []
+}

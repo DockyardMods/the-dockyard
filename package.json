@@ -1,0 +1,21 @@
+{
+  "name": "the-dockyard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "bunx prettier --write . && bun run scripts/sort-registry.ts",
+    "validate:schema": "bun run scripts/validate-registry.ts",
+    "validate": "bun validate:schema"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.12",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "prettier": "^3.8.2",
+    "temporal-polyfill": "^0.3.2",
+    "try": "^1.0.3"
+  }
+}
