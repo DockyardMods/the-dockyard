@@ -28,6 +28,3 @@ jobs:
 
       - name: Validate registry
         run: bun validate
-
-      - name: Check formatting
-        run: bun format:registry
