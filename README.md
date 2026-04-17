@@ -1,14 +1,6 @@
 # Dockyard Mod Registry
 
-This repository is the authoritative registry for platform-approved World of Warships mods used by Dockyard.
-
-## What This Repository Controls
-
-- The current target World of Warships `currentGameVersionId`
-- The set of mods
-- The current version of each mod
-- Wargaming certification expiration date, when applicable
-- The GitHub location of each mod manifest
+List of all the mods available on Dockyard Mods. This repo is mainly for maintainers of Dockyard Mods. To submit a mod to Dockyard Mods, you should go to [the mod submission repo](https://github.com/DockyardMods/mod-submission) and follow the steps there. Everything else here is a technical breakdown of this repo.
 
 ## Registry Files
 
@@ -19,14 +11,27 @@ This repository is the authoritative registry for platform-approved World of War
 
 ## Local Validation
 
-This repo uses Bun for local scripts and CI.
+This repo uses Bun for local scripts and CI, which allows for validation and formatting. 
+
+### Prerequisites
+
+Bun deps need to be installed to run the scripts, so run the following command.
 
 ```bash
 bun install
+```
+
+### Validation
+
+To check/validate the repository, use this command.
+
+```bash
 bun validate
 ```
 
-To rewrite `registry.json` into canonical order and formatting:
+### Formatting
+
+Run this command to format the registry.
 
 ```bash
 bun format:registry
@@ -34,12 +39,15 @@ bun format:registry
 
 ## Submitting Changes
 
-1. Edit `registry.json` only for registry data changes.
-2. Keep `mods` sorted by `id`.
-3. Run local validation before opening a pull request.
-4. Open a PR for maintainer review.
+The registry should be kept up-to-date by the Dockyard Mods maintainers, so manual PRs shouldn't be needed, but here are the steps to take anyways.
+
+1. Edit a mod entry in `registry.json`
+3. Run local validation and formatting
+4. Open a PR for maintainer review
 
 ## Example
+
+Here is an example of the registry
 
 ```json
 {
