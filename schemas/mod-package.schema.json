@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://dockyardmods.github.io/the-dockyard/schemas/mod-package.schema.json",
+  "title": "Dockyard Mod Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["url", "sha256"],
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    }
+  }
+}

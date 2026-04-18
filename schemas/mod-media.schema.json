@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://dockyardmods.github.io/the-dockyard/schemas/mod-media.schema.json",
+  "title": "Dockyard Mod Media",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "path"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["image", "video"]
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "thumbnailPath": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
