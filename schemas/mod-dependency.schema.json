@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://dockyardmods.github.io/the-dockyard/schemas/mod-dependency.schema.json",
+  "$id": "https://raw.githubusercontent.com/DockyardMods/the-dockyard/refs/heads/main/schemas/mod-dependency.schema.json",
   "title": "Dockyard Mod Dependency",
   "type": "object",
   "additionalProperties": false,

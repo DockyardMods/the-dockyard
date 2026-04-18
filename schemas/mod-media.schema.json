@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://dockyardmods.github.io/the-dockyard/schemas/mod-media.schema.json",
+  "$id": "https://raw.githubusercontent.com/DockyardMods/the-dockyard/refs/heads/main/schemas/mod-media.schema.json",
   "title": "Dockyard Mod Media",
   "type": "object",
   "additionalProperties": false,
