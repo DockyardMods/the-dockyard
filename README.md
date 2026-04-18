@@ -9,41 +9,12 @@ List of all the mods available on Dockyard Mods. This repo is mainly for maintai
 
 `registry.json` includes a top-level `$schema` field pointing at `./schemas/registry.schema.json` so the file is self-describing in editors and tooling.
 
-## Local Validation
-
-This repo uses Bun for local scripts and CI, which allows for validation and formatting. 
-
-### Prerequisites
-
-Bun deps need to be installed to run the scripts, so run the following command.
-
-```bash
-bun install
-```
-
-### Validation
-
-To check/validate the repository, use this command.
-
-```bash
-bun validate
-```
-
-### Formatting
-
-Run this command to format the registry.
-
-```bash
-bun format:registry
-```
-
 ## Submitting Changes
 
 The registry should be kept up-to-date by the Dockyard Mods maintainers, so manual PRs shouldn't be needed, but here are the steps to take anyways.
 
 1. Edit a mod entry in `registry.json`
-3. Run local validation and formatting
-4. Open a PR for maintainer review
+2. Open a PR for maintainer review
 
 ## Example
 
