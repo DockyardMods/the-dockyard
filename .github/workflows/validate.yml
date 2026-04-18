@@ -10,8 +10,8 @@ on:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    uses: DockyardMods/tooling/.github/workflows/validate-registry.yml@main
+    with:
+      registry_path: ./registry.json
+      registry_schema_url: https://raw.githubusercontent.com/DockyardMods/the-dockyard/main/schemas/registry.schema.json
+      schema_base_url: https://raw.githubusercontent.com/DockyardMods/the-dockyard/main/schemas
